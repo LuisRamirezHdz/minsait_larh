@@ -1,16 +1,26 @@
-# minsait_larh
+# Prueba técnica Luis Ramírez
 
-A new Flutter project.
+La app consta de 3 modulos:
+-  Listado de peliculas (home.dart)
+    -  Utiliza The Movie Database API
+    -  ![alt text](1.png)
+    -  ![alt text](4.png)
+-  Mapa de Ubicaciones (map.dart)
+    - Con ubicaciones específicas
+    -  ![alt text](2.png)
+-  Perfil (map.dart)
+    - Con información de usuario
+    - Reseñas (estás se crean al seleccionar una película del listado).
+    - ![alt text](3.png)
 
-## Getting Started
+ 
+## Versiones
+-  Flutter 3.16.9
+-  Dart 3.2.6
 
-This project is a starting point for a Flutter application.
+## Decisiones de diseño
 
-A few resources to get you started if this is your first Flutter project:
+- Para administrar el estado global de la aplicación ocupé el patrón Provider, por su popularidad y simplicidad sobre Bloc. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Para la persistencia de datos use el plugin sqflite que permite rápidas inserciones y consultas de una base de datos.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
